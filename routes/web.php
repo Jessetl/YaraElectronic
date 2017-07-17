@@ -11,13 +11,20 @@
 |
 */
 
-Route::prefix('/')->middleware('guest')->group(function () {
+Route::prefix('/')->group(function () {
 
 	Auth::routes();
-
 	Route::get('/', function () { return view('auth.login'); });
+	
 });
 
 Route::prefix('/')->middleware('auth')->group(function () {
 	Route::get('/home', 'HomeController@index')->name('home');
+    Route::resource('/personal',  'PersonalController');
+    Route::resource('/proveedores', 'ProveedoresController');
+    Route::resource('/productos', 'ProductosController');
+    Route::resource('/usuarios', 'UsuariosController');
+    Route::resource('/ordenes-de-compra', 'OrdenesController');
+    Route::resource('/clientes', 'ClientesController');
 });
+

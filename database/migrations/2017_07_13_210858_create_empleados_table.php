@@ -15,6 +15,7 @@ class CreateEmpleadosTable extends Migration
     {
         Schema::create('empleados', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('url', 255);
             $table->enum('nac_em', array('V', 'E'));
             $table->integer('ced_em');
             $table->string('nom_em', 55);

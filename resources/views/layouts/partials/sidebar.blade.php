@@ -14,10 +14,19 @@
 		<!-- sidebar menu: : style can be found in sidebar.less -->
 		<ul class="sidebar-menu" data-widget="tree">
 			<li class="header">MENU DE NAVEGACIÓN</li>
-			<li class="treeview">
-				<a href="#">
+			<li>
+				<a href="{{ route('personal.index') }}">
 					<i class="fa fa-briefcase"></i>
 					<span>Personal</span>
+					<span class="pull-right-container">
+						<span class="label label-primary pull-right">4</span>
+					</span>
+				</a>
+			</li>
+			<li>
+				<a href="{{ route('proveedores.index') }}">
+					<i class="fa fa-briefcase"></i>
+					<span>Proveedores</span>
 					<span class="pull-right-container">
 						<span class="label label-primary pull-right">4</span>
 					</span>

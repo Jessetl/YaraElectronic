@@ -5,6 +5,9 @@
     <p class="login-box-msg">INICIO DE SESIÓN</p>
 
     <form class="form" method="POST" action="{{ route('login') }}">
+    
+        {{ csrf_field() }}
+
         <div class="form-group has-feedback">
             <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="E-mail" required autofocus>
             <span class="glyphicon glyphicon-envelope form-control-feedback"></span>

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\ordenes;
 
-class OrdenesdeCompraController extends Controller
+class OrdenesController extends Controller
 {
     /**
      * Display a listing of the resource.

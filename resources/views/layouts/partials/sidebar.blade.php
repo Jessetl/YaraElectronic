@@ -4,7 +4,7 @@
 		<!-- Sidebar user panel -->
 		<div class="user-panel">
 			<div class="pull-left image">
-				<img src="dist/img/default-user.png" class="img-circle" alt="User Image">
+				<img src="{{ asset('dist/img/default-user.png') }}" class="img-circle" alt="User Image">
 			</div>
 			<div class="pull-left info">
 				<p>{{ ucwords(Auth::user()->name) }}</p>
@@ -25,13 +25,23 @@
 			</li>
 			<li>
 				<a href="{{ route('proveedores.index') }}">
-					<i class="fa fa-briefcase"></i>
+					<i class="fa fa-truck"></i>
 					<span>Proveedores</span>
-					<span class="pull-right-container">
+					<!--<span class="pull-right-container">
 						<span class="label label-primary pull-right">4</span>
-					</span>
+					</span> -->
 				</a>
 			</li>
+			<li>
+				<a href="{{ route('clientes.index') }}">
+					<i class="fa fa-group"></i>
+					<span>Clientes</span>
+					<!--<span class="pull-right-container">
+						<span class="label label-primary pull-right">4</span>
+					</span>-->
+				</a>
+			</li>
+
 			<li class="header">CONFIGURACIONES</li>
 			<li><a href="#"><i class="fa fa-sitemap"></i> <span>Categorías</span></a></li>
 			<li><a href="#"><i class="fa fa-star"></i> <span>Marcas</span></a></li>

@@ -19,12 +19,19 @@ Route::prefix('/')->group(function () {
 });
 
 Route::prefix('/')->middleware('auth')->group(function () {
+    
 	Route::get('/home', 'HomeController@index')->name('home');
     Route::resource('/personal',  'PersonalController');
     Route::resource('/proveedores', 'ProveedoresController');
     Route::resource('/productos', 'ProductosController');
     Route::resource('/usuarios', 'UsuariosController');
-    Route::resource('/ordenes-de-compra', 'OrdenesController');
+    Route::resource('/ordenes', 'OrdenesController');
     Route::resource('/clientes', 'ClientesController');
+    Route::resource('/bitacoras', 'BitacorasController');
+    Route::resource('/categorias',  'CategoriasController');
+    Route::resource('/resatauraciones', 'ResatauracionesConntroller');
+    Route::resource('/marcas', 'MarcasController');
+    
+
 });
 

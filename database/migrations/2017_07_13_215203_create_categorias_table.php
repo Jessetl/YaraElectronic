@@ -15,8 +15,6 @@ class CreateCategoriasTable extends Migration
     {
         Schema::create('categorias', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('unidad_id')->unsigned();
-            $table->foreign('unidad_id')->references('id')->on('unidades')->onDelete('Cascade');
             $table->string('nom_cat', 55)->unique();
             $table->timestamps();
         });

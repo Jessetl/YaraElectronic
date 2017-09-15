@@ -29,7 +29,6 @@
             </div>
         </div>
         
-        ¿No tiene una cuenta?<a href="{{ route('register') }}" class="text-center"> Registrarme</a><br>
         <a class="text-center" href="{{ route('password.request') }}"> He olvidado mi contraseña</a>
     </form>
 

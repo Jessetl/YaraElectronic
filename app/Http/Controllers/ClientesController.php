@@ -17,7 +17,7 @@ class ClientesController extends Controller
         $clientes = cliente::all();
         $numero   = 0;
 
-        return view('cliente.index', compact('cliente', 'numero'));
+        return view('clientes.index', compact('clientes', 'numero'));
     }
 
     /**
@@ -27,7 +27,7 @@ class ClientesController extends Controller
      */
     public function create()
     {
-        //
+        return view('clientes.create');
     }
 
     /**

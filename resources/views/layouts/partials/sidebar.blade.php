@@ -42,9 +42,19 @@
 				</a>
 			</li>
 
+			<li>
+				<a href="{{ route('productos.index') }}">
+					<i class="fa fa-group"></i>
+					<span>Productos</span>
+					<!--<span class="pull-right-container">
+						<span class="label label-primary pull-right">4</span>
+					</span>-->
+				</a>
+			</li>
+
 			<li class="header">CONFIGURACIONES</li>
-			<li><a href="#"><i class="fa fa-sitemap"></i> <span>Categorías</span></a></li>
-			<li><a href="#"><i class="fa fa-star"></i> <span>Marcas</span></a></li>
+			<li><a href="{{ route('categorias.index') }}"><i class="fa fa-sitemap"></i> <span>Categorías</span></a></li>
+			<li><a href="{{ route('marcas.index') }}"><i class="fa fa-star"></i> <span>Marcas</span></a></li>
 			<li class="treeview">
 	        	<a href="#">
 		            <i class="fa fa-cog"></i>
@@ -54,7 +64,7 @@
 		            </span>
 	          	</a>
 	          	<ul class="treeview-menu" style="display: none;">
-		            <li><a href="general.html"><i class="fa fa-circle-o text-yellow"></i> Bitácora</a></li>
+		            <li><a href="{{ route('bitacoras.index') }}"><i class="fa fa-circle-o text-yellow"></i> Bitácora</a></li>
 		            <li><a href="icons.html"><i class="fa fa-circle-o text-aqua"></i> Restauraciones</a></li>
 		            <li><a href="buttons.html"><i class="fa fa-circle-o text-info"></i> Usuarios</a></li>
 	          	</ul>
